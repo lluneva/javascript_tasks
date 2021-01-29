@@ -1,0 +1,57 @@
+{
+  "name": "web-template",
+  "version": "1.0.1",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/bpk68/web-template.git",
+  "author": "Rob Kendal <38687284+rpk506@users.noreply.github.com>",
+  "license": "AGPL-3.0-or-later",
+  "keywords": [
+    "web template",
+    "starter project",
+    "template"
+  ],
+  "_additional-dependencies": {
+    "@semantic-release/changelog": "3.0.2",
+    "@semantic-release/commit-analyzer": "6.1.0",
+    "@semantic-release/git": "7.0.7",
+    "@semantic-release/github": "5.2.8",
+    "@semantic-release/release-notes-generator": "7.1.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.11.5",
+    "semantic-release": "17.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/polyfill": "7.11.5",
+    "@babel/preset-env": "7.11.5",
+    "babel-loader": "8.1.0",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "6.2.0",
+    "css-loader": "4.3.0",
+    "file-loader": "6.1.0",
+    "html-webpack-plugin": "4.5.0",
+    "image-webpack-loader": "7.0.1",
+    "mini-css-extract-plugin": "0.11.3",
+    "node-sass": "4.14.1",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "prettier": "^2.2.1",
+    "sass-loader": "10.0.2",
+    "style-loader": "1.3.0",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "url-loader": "4.1.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0",
+    "webpack-merge": "5.1.4"
+  },
+  "scripts": {
+    "build": "webpack --config config/webpack.prod.js",
+    "build:dev": "webpack --config config/webpack.dev.js",
+    "start": "webpack-dev-server --open --config config/webpack.dev.js",
+    "release": "semantic-release",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/**/*.{js}"
+  }
+}
