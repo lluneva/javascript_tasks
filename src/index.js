@@ -6,7 +6,7 @@ document.querySelector('#output').innerHTML = `Welcome to Javascript`;
 const printResult = input => console.log(input);
 
 // TODO Task 1
-// Uzrakstīt funkciju, kura saņem ievadē divus veselus ciparus un izvada skaitļu summu.
+// Uzrakstīt funkciju, kura saņem ievadē masīvu, un kas atrod MAX ciparu, neizmantojot Math.max().
 
 const getMax = array => {
   // logic here to get Max number of array, without using Math.getMax!!!
@@ -16,9 +16,9 @@ const TEST_1 = [1, 23, 3];
 const TEST_2 = [100, 0, 99, 100, 200, 100];
 const TEST_3 = [0, 0, 0, 1, 1, 1];
 
-printResult(getMax(TEST_1));
-printResult(getMax(TEST_2));
-printResult(getMax(TEST_3));
+printResult(getMax(TEST_1)); => 23
+printResult(getMax(TEST_2)); => 200
+printResult(getMax(TEST_3)); => 1
 
 // TODO Task 2
 // Uzrakstīt funkciju, kura saņem ievadē masīvu (array) un izvada vidējo aritmētisko
