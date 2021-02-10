@@ -16,9 +16,9 @@ const TEST_1 = [1, 23, 3];
 const TEST_2 = [100, 0, 99, 100, 200, 100];
 const TEST_3 = [0, 0, 0, 1, 1, 1];
 
-printResult(getMax(TEST_1)); => 23
-printResult(getMax(TEST_2)); => 200
-printResult(getMax(TEST_3)); => 1
+printResult(getMax(TEST_1)); // => 23
+printResult(getMax(TEST_2)); // => 200
+printResult(getMax(TEST_3)); // => 1
 
 // TODO Task 2
 // Uzrakstīt funkciju, kura saņem ievadē masīvu (array) un izvada vidējo aritmētisko
@@ -44,7 +44,7 @@ printResult(isWithinLimits(50));
 // TODO Task 4
 // Uzrakstīt funkciju, kas saņem ievadē 1 skaitli, Output => tiek izdrukāti visi skaitļi līdz input skaitlim ieskaitot (5 -> 0,1,2,3,4,5), vai (-5 -> -5,-4,-3,-2,-1)
 
-const getNeededNumbers = input => {
+const getAllSmallerNumbers = input => {
   // logic here
 };
 
